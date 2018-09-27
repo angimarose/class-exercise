@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Origins</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <link href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- Load our styles -->
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="right-sidebar">
+      <p class="sidebar-info">
+        Coffee Origin Data
+      </p>
+      <div class="overlay">
+      <select class="data-picker">
+        <option value="">Select Data Type</option>
+        <option value="exports">Exports</option>
+        <option value="domestic-consumption">Domestic Consumption</option>
+        <option value="production">Production</option>
+      </select>
+    </div>
+    </div>
+    
+    <!-- Load Leaflet library -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    
+    <!-- Load Promises polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    
+    <!-- Load Fetch polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.4/fetch.js"></script>
+    
+    <!-- Load our JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
